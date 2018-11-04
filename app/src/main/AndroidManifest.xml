@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".SimpleCollapsingActivity" />
-        <activity android:name=".CollapsingActivity"></activity>
+        <activity android:name=".CollapsingActivity" />
+        <activity android:name=".EffectCollapsingActivity"></activity>
     </application>
 
 </manifest>

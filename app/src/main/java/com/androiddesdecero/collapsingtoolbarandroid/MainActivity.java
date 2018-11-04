@@ -10,6 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btSimpleCollapsing;
     private Button btCollapsing;
+    private Button btEffetCollapsing;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), CollapsingActivity.class));
+            }
+        });
+
+        btEffetCollapsing = findViewById(R.id.btEffetCollapsing);
+        btEffetCollapsing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), EffectCollapsingActivity.class));
+
             }
         });
     }
